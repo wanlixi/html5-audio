@@ -1,6 +1,15 @@
 # html5-audio
 展示html5提供的强大的音频控制API
 
+****** 
+![image](http://www.yuanxiaodie.com/piano/html5-audio.jpg)
+线上demo：[模拟钢琴](http://www.yuanxiaodie.com/piano/)
+首先需要浏览器支持HTML5 Web Audio API
+HTML5 Web Audio API 一共提供了音阶 scale 0~9 的10个区间和音调 tone c~b 12个区间
+这里我选择了scale 3~8，作为示例实现了一个简单模拟钢琴，并且下面带一首 我自己盲弹摸索的《两只老虎》，有兴趣可以按照我给出音谱弹奏，后续继续完善！
+******
+
+
 首先我们要声明下，这里所说的audio API和 <audio> 标签元素是两码事，而且提供了非常丰富的API，
 HTML5 Audio API可以使我们无中生有创造出声音，也就是说如果我们掌握了音律知识和Audio API，就可以使用它和
 硬件（电脑）组装出来一架 “ 钢琴 ” 。
