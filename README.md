@@ -52,7 +52,7 @@ HTML5 Web Audio API提供的功能有以下几点：
 
 第六行：gainNode.connect(audioCtx.destination) 这里的audioCtx.destination返回AudioDestinationNode对象，AudioDestinationNode接口表示音频图形在特定情况下的最终输出地址 – 通常为扬声器。话句话说就是和音频设备关联。
 
-第七行： 7. oscillator.type = ‘sine’ 我们的声音波形指定为'sine'，也就是正弦波，还支持其他3种波形，为'square'方波，'triangle'三角波以及'sawtooth'锯齿波。形状如[下图](http://image.zhangxinxu.com/image/blog/201706/2017-06-10_223950.png)
+第七行： 7. oscillator.type = ‘sine’ 我们的声音波形指定为'sine'，也就是正弦波，还支持其他3种波形，为'square'方波，'triangle'三角波以及'sawtooth'锯齿波。形状如![image](http://image.zhangxinxu.com/image/blog/201706/2017-06-10_223950.png)
 
 第八行： oscillator.frequency.value = 196.00
 设置波形的频率，实际上，可以理解为设置声音的音调，也就是设置最后的声音是“多瑞米发嗦啦西”其中的一个。数值越小，声音越低沉，越大提琴；数值越大，声音越清脆，越小提琴。
