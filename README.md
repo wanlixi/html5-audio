@@ -18,20 +18,21 @@ HTML5 Web Audio API提供的功能有以下几点：
 10、以及其他多种音频波形算法控制，几乎就是把一个音频编辑类软件搬到web上。
 
 ### 网页交互音效AudioContext，AudioParam等API介绍
-` 
-<br>  window.AudioContext = window.AudioContext || window.webkitAudioContext;
-<br>  var audioCtx = new AudioContext();
-<br>  var oscillator = audioCtx.createOscillator();
-<br>  var gainNode = audioCtx.createGain();
-<br>  oscillator.connect(gainNode);
-<br>  gainNode.connect(audioCtx.destination);
-<br>  oscillator.type = 'sine';
-<br>  oscillator.frequency.value = 196.00;
-<br>  gainNode.gain.setValueAtTime(0, audioCtx.currentTime);
-<br>  gainNode.gain.linearRampToValueAtTime(1, audioCtx.currentTime + 0.01);
-<br>  oscillator.start(audioCtx.currentTime);
-<br>  gainNode.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 1);
-<br>  oscillator.stop(audioCtx.currentTime + 1); `
+``` 
+  window.AudioContext = window.AudioContext || window.webkitAudioContext;
+  var audioCtx = new AudioContext();
+  var oscillator = audioCtx.createOscillator();
+  var gainNode = audioCtx.createGain();
+  oscillator.connect(gainNode);
+  gainNode.connect(audioCtx.destination);
+  oscillator.type = 'sine';
+  oscillator.frequency.value = 196.00;
+  gainNode.gain.setValueAtTime(0, audioCtx.currentTime);
+  gainNode.gain.linearRampToValueAtTime(1, audioCtx.currentTime + 0.01);
+  oscillator.start(audioCtx.currentTime);
+  gainNode.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 1);
+  oscillator.stop(audioCtx.currentTime + 1); 
+  ```
   
 第一行：兼容老的webkit浏览器
 
