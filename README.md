@@ -84,4 +84,3 @@ exponentialRampToValueAtTime()方法表示音量在某时间指数变化到某�
 第十三行： oscillator.stop(audioCtx.currentTime + 1)
 1秒后，声音关闭。
 
-最终，我们把源码和注释重新整合下就有：
